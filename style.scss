@@ -5,18 +5,19 @@
 
 body {
     margin: 0;
-    background: grey;
+    background: rgb(41, 41, 41);
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    min-height: 100%;
-    width: 70vw;
+    height: 99%;
+    width: 65vw;
     background: white;
 }
 
@@ -65,6 +66,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgb(233, 230, 230);
+    gap: 10px;
     // font-size: 3ch;
 
     .text-container {
@@ -77,18 +79,34 @@ body {
 
     .form {
         background-color: white;
-    }
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 
-    .input-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem 3rem;
-        padding-left: 2.5rem;
-
-        div {
-            width: 300px;
-            display: flex;
-            flex-direction: column;
+        > div { // Each container in the form
+            margin-left: 2.5rem;
+            height: 100%;
         }
+
+        .form-header {
+            display: flex;
+            font-size: 2ch;
+            font-weight: bold;
+            align-items: center;
+        }
+
+
+        .input-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem 3rem;
+            // padding-left: 2.5rem;
+    
+            div {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+            }
+        }    
+        
     }
+
 }
