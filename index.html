@@ -34,7 +34,7 @@
                     </div>
                     <div>
                         <label for="last-name">last Name</label>
-                        <input type="text" name="last-name" id="last-name" value="Odinson|">
+                        <input type="text" class="focus" name="last-name" id="last-name" value="Odinson|">
                         <div class="validation last-name"></div>
                     </div>
                     <div>
@@ -49,15 +49,16 @@
                     </div>
                     <div>
                         <label for="password">password</label>
-                        <input type="password" name="password" id="password">
-                        <div class="validation password"></div>
+                        <input type="password" name="password" id="password" class="invalid">
+                        <div class="validation password">*Passwords do not match</div>
                     </div>
                     <div>
                         <label for="confirm-password">confirm password</label>
-                        <input type="text" name="confirm-password" id="confirm-password">
+                        <input type="text" name="confirm-password" id="confirm-password" class="invalid">
                         <div class="validation confirm-password"></div>
                     </div>
                 </div>
+
                 <div class="submit-container"><button class="submit" type="submit">Create Account</button></div>
             </form>
 
