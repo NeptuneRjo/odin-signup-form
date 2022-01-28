@@ -1,0 +1,152 @@
+@font-face {
+  font-family: NorseBold;
+  src: url("Norse-Bold.otf");
+}
+body {
+  margin: 0;
+  background: #292929;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  height: 99%;
+  width: 65vw;
+  background: white;
+}
+
+.col1 {
+  background: url("banner-image.jpg") no-repeat;
+  background-size: auto 100%;
+  background-position: bottom;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.banner .banner-header {
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-family: NorseBold, sans-serif;
+  font-size: 5ch;
+}
+.banner .banner-attribution {
+  margin-top: 35rem;
+  height: 2rem;
+  color: white;
+  font-size: 1.25ch;
+  display: block;
+  text-align: center;
+}
+.banner .banner-attribution :link {
+  color: white;
+}
+.banner .banner-attribution :visited {
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #e9e6e6;
+  gap: 10px;
+}
+.main .text-container {
+  width: 52ch;
+  font-size: 2ch;
+  font-weight: bold;
+  padding-left: 2.5rem;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+.main .form {
+  background-color: white;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding-bottom: 2rem;
+}
+.main .form > div {
+  margin-left: 2.5rem;
+  height: 100%;
+}
+.main .form .form-header {
+  display: flex;
+  font-size: 2ch;
+  font-weight: bold;
+  align-items: center;
+}
+.main .form .input-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 3rem;
+}
+.main .form .input-container div {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.main .form .input-container label {
+  text-transform: uppercase;
+  font-size: 1.2ch;
+}
+.main .form .input-container input {
+  border-radius: 4px;
+  border: solid 1px #E5E7EB;
+  height: 25px;
+}
+.main .form .input-container input.focus {
+  border: solid 1px blue;
+}
+.main .form .input-container input.invalid {
+  border: solid 1px red;
+}
+.main .form .input-container .validation {
+  margin-top: 0.25rem;
+  color: red;
+  font-size: 1.2ch;
+}
+.main .submit-container {
+  padding-left: 2.5rem;
+  margin-top: 1rem;
+}
+.main .submit-container .submit {
+  background-color: #596D48;
+  border: solid 1px #596D48;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5ch;
+  border-radius: 8px;
+  height: 50px;
+  width: 200px;
+}
+.main .login {
+  padding-left: 2.5rem;
+  margin-top: 1rem;
+  width: 50%;
+  display: block;
+  justify-content: flex-start;
+}
+.main .login a {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
+}
+.main .login a :visited {
+  color: #596D48;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
