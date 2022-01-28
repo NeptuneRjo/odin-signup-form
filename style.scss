@@ -15,7 +15,7 @@ body {
 
 .content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
     height: 99%;
     width: 65vw;
     background: white;
@@ -23,7 +23,7 @@ body {
 
 .col1 {
     background: url('banner-image.jpg') no-repeat;
-    background-size: 150%;
+    background-size: auto 100%;
     background-position: bottom;
 }
 
@@ -76,11 +76,14 @@ body {
         font-weight: bold;
         padding-left: 2.5rem;
         gap: 1rem;
+
+        margin-top: 5rem;
     }
 
     .form {
         background-color: white;
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+        padding-bottom: 2rem;
 
         > div { // Each container in the form
             margin-left: 2.5rem;
@@ -130,8 +133,44 @@ body {
                 color: red;
                 font-size: 1.2ch;
             }
-        }    
+        } 
+                
+    }
+
+    .submit-container {
+        padding-left: 2.5rem;
+        margin-top: 1rem;
+
+        .submit {
+            background-color: #596D48;
+            border: solid 1px #596D48;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5ch;
+            border-radius: 8px;
+            height: 50px;
+            width: 200px;
+        }
+    
+    }
+
+    .login {
+        padding-left: 2.5rem;
+        margin-top: 1rem;
+        width: 50%;
+        display: block;
+        justify-content: flex-start;
         
+        a {
+            color: #596D48;
+            font-weight: bold;
+            text-decoration: none;
+
+            :visited {
+                color: #596D48;
+                text-decoration: none;
+            }
+        }
     }
 
 }
